@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mock Forex Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Forex Board Rate Display</h1>
+
+  <table>
+    <tr><th>Currency</th><th>Rate (UGX)</th></tr>
+    <tr><td>USD</td><td id="usdRate">3850</td></tr>
+    <tr><td>EUR</td><td id="eurRate">4200</td></tr>
+    <tr><td>GBP</td><td id="gbpRate">4550</td></tr>
+    <tr><td>KES</td><td id="kesRate">30</td></tr>
+  </table>
+
+  <div class="form-group">
+    <label>USD
+      <input type="number" id="usdInput" value="3850" />
+    </label>
+    <label>EUR
+      <input type="number" id="eurInput" value="4200" />
+    </label>
+    <label>GBP
+      <input type="number" id="gbpInput" value="4550" />
+    </label>
+    <label>KES
+      <input type="number" id="kesInput" value="30" />
+    </label>
+  </div>
+
+  <button onclick="updateRates()">Update Rates</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
